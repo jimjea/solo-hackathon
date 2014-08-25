@@ -5,14 +5,14 @@ $(document).ready(function() {
       var point = new google.maps.LatLng(position.coords.latitude, 
        position.coords.longitude);
 
-    // Initialize the Google Maps API v3
+    // Create map
     var map = new google.maps.Map(document.getElementById('map'), {
      zoom: 16,
      center: point,
      mapTypeId: google.maps.MapTypeId.ROADMAP
    });
 
-    // Place a marker
+    // Place marker
     new google.maps.Marker({
       position: point,
       map: map,
